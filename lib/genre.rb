@@ -14,6 +14,7 @@ class Genre
     @name = name
     @@all << self
     @artists = []
+    @songs = [] 
   end
 
   def new_song(name, artist)
@@ -21,7 +22,7 @@ class Genre
   end
 
   def artists
-    @self.songs.map do |song| song.artist end
+    @songs.map do |song| song.artist end
   end
 
   def songs
