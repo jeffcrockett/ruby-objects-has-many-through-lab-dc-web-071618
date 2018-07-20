@@ -2,7 +2,7 @@ require_relative 'artist'
 
 class Song
   @@all = []
-  attr_accessor :name
+  attr_accessor :name, :artist, :genre
 
   def self.all
     @@all.each do |song| puts song.name end
