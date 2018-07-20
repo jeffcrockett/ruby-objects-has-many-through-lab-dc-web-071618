@@ -22,7 +22,7 @@ class Genre
   end
 
   def artists
-    @artists = @songs.map do |song| song.artist end
+    @artists = @songs.collect do |song| song.artist end
   end
 
   def songs
