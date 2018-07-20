@@ -1,17 +1,14 @@
-require_relative 'doctor'
-require_relative 'patient'
-
 class Appointment
   @@all = []
-
-  def self.all
-    @@all.each do |appointment|
-      puts appointment
-    end
   end
 
-  def initialize(name)
-    @name = name
-    @@all << self
+  def self.all
+    @@all.each do |appointment| puts appointment.date end
+  end
+
+  def initialize(date, patient, doctor)
+    @date = date
+    @patient = patient 
+    @doctor = doctor
   end
 end
