@@ -28,7 +28,6 @@ class Doctor
   def patients
     # Patient.all.select do |patient|
     #   appointment.patient
-    end
   end
 
 end
