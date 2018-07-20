@@ -7,12 +7,11 @@ class Genre
   attr_accessor :name
 
   def self.all
-    @all.each do |genre| puts genre end
   end
 
   def initialize(name)
     @name = name
-    @songs = []
+    @@all << self
   end
 
   def new_song(name, artist)
