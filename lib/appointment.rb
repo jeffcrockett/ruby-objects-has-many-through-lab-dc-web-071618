@@ -1,6 +1,5 @@
 class Appointment
   @@all = []
-  end
 
   def self.all
     @@all.each do |appointment| puts appointment.date end
@@ -8,7 +7,7 @@ class Appointment
 
   def initialize(date, patient, doctor)
     @date = date
-    @patient = patient 
+    @patient = patient
     @doctor = doctor
   end
 end
