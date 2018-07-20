@@ -6,7 +6,7 @@ class Artist
   attr_accessor :name, :songs
 
   def self.all
-    @@all.each do |artist| puts artist end
+    @@all.each do |artist| puts artist.name end
   end
 
   def initialize(name)
