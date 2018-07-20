@@ -6,7 +6,7 @@ class Doctor
   attr_accessor :name
 
   def self.all
-    @all.each do |appointment| puts appointment end
+    @all.each do |doctor| puts doctor.name end
   end
 
   def initialize(name)
