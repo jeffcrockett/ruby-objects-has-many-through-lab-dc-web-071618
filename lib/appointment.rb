@@ -5,7 +5,7 @@ class Appointment
     @@all.each do |appointment| puts appointment.date end
   end
 
-  def initialize(date, patient, doctor)
+  def initialize(patient, doctor, date)
     @date = date
     @patient = patient
     @doctor = doctor
