@@ -1,0 +1,15 @@
+require_relative 'appointment'
+
+class Patient
+  @@all = []
+
+  def self.all
+    @@all.each do |patient|
+      puts patient
+    end
+  end
+
+  def new_appointment(date, doctor)
+    appointment = Appointment.new(date, self, doctor)
+  end
+end
