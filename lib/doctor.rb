@@ -12,7 +12,6 @@ class Doctor
   def initialize(name)
     @name = name
     @all << self
-    @appointments = []
   end
 
   def new_appointment(date, patient)
@@ -20,7 +19,7 @@ class Doctor
   end
 
   def appointments
-    self.appointments.select do |appointment|
+    Appointment.all.select do |appointment|
       appointment.doctor == self
     end
   end
